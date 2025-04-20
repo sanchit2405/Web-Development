@@ -1,1 +1,0 @@
-alert("Welcom to sanchit's website")
