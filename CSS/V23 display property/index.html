@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        
+        .box{
+          border: 3px solid red;  
+          display: inline-block;
+         
+          text-align: center;
+          padding: 45px;
+          margin: 10px;
+        
+          width: 150px;
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+           /* display:  inline-flex; */
+           /* justify-content: center; */
+
+        }
+        span{
+            border: 2px solid blue;
+           display: inline-block;
+           width: 80vw;
+           margin: 10px;
+           
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box  
+    </div>
+   
+    <div class="box">
+        of red colour
+    </div>
+
+    <!-- 2 div use kare toh alag alag line mei aaya so to make this a block element we will use the display property(see in .box) -->
+
+    <span>I am a very </span>
+    <span>sexy boy</span>
+    
+    <!-- 2 spans use kare but ek he lin emei aaya bcz its an inline element -->
+</body>
+</html>

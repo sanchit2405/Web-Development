@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* div{
+                background-color: yellow;
+            } */
+
+        /* div ke saare tags ko agar hume yellow karna hai then we will use the above commented code and if we want to use a particular div then we will give a class name(yellow) to that div and to style only that div we will use (.yellow) like given below */
+
+        /* class selector */
+        .yellow {
+            background-color: yellow;
+        }
+
+        /* Id selector */
+        #green {
+            background-color: lightgreen;
+        }
+
+        /* child selector */
+       
+        /* div > p{ */
+        /* div ke andar mei jo para hai( div > p) */
+        /* color: blue;
+                background-color: gold;
+            } */
+
+        /* descendant selectors */
+        div span {
+            color: pink;
+            background-color: purple;
+        }
+
+        /* universal selectors */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+         /* Pseudo Selectors */
+        a{
+            color: green;
+        }
+        /* a:visited{
+            color: rgb(6, 6, 5);
+        } */
+        a:hover{
+           background-color: pink;
+           color: black;
+                }
+    .my p:first-child{
+            background-color: red;
+            color:yellow;
+
+            /* agar hume kisi div mei keval first para mei changes kane ho toh */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="yellow">
+        I am div
+        <p>
+            I am a para inside div
+        </p>
+    </div>
+    
+    <div id="green">
+        I am another div
+        <p>
+            <span>
+                I Love my family
+            </span>
+        </p>
+    </div>
+<br>
+    <div class="my">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum vero fugit placeat cupiditate officia neque delectus unde amet minus reiciendis.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta iste, quisquam maiores incidunt recusandae veritatis.</p><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque?</p>
+    </div>
+
+    <a target="_blank" href="https://google.com">Google</a>
+    <a target="_blank" href="https://facebook.com">facebook</a>
+</body>
+
+</html>

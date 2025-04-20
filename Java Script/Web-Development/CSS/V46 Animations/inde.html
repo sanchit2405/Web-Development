@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            width: 70vw;
+            height: 80vh;
+            background-color: rgb(99, 231, 99);
+            
+        }
+        .box{
+            width: 64px;
+            height: 54px; 
+            background-color: blue;
+
+            /* animation-name: SanchitKaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-delay: 1s ;
+            animation-direction: alternate;  
+            animation-timing-function: ease-in-out;
+            animation-play-state:paused ;
+            animation-fill-mode:forwards;   */
+            /* 3 baar hoke vahi aage he rahe , wapas peeche nahi jaayega */
+
+            animation: SanchitKaAnimation 3s ease-in-out 3 alternate forwards
+                     /* animation:   sanchit2 3s ease-in-out infinite alternate forwards ;  */
+            
+        }
+        @keyframes SanchitKaAnimation {
+            from{
+               background-color: pink;
+            }
+            to{
+                transform:  translateX(200px) translateY(100px) rotate(90deg) scale(2);
+                background-color: purple;
+            }
+        }
+        /* @keyframes sanchit2 {
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{ transform: rotate(50deg) }
+            50%{ transform: rotate(150deg)}
+            80%{ transform: rotate(250deg)}
+            100%{ transform: rotate(300deg)}
+        } */
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">BOX</div>
+        </div>
+</body>
+</html> 

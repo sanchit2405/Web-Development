@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector (spec. = 1) */
+        h1 {
+            color: blue;
+        }
+
+        /* class selector (spec. = 10)  */
+        .yellow {
+            color: ygreyqellow;
+        }
+
+        /* class selector (spec. = 10)  */
+        .red {
+            color: red; 
+            /* color: red !important; */
+            /* since i have given important so no matter what but the color will be red  */
+        }
+
+        /* class selector (spec. = 10)  */
+        .purple {
+            color: purple;
+        }
+
+        /* attribute selector(    =10) */
+        [data-x=a] {
+            color: pink;
+        }
+
+        /* id selector (100) */
+        #hello {
+            color: blue;
+        }
+
+        h1.yellow{
+            /* h1(1) + class selec (10) = (11) so specificity 11 >10 */
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="yellow red purple" data-x="a">CSS specificity</h1>
+
+    <h2 style="color: crimson;" id="hello">Hello , I am Sanchit</h2>
+    <!-- inline > id selector -->
+</body>
+
+</html>

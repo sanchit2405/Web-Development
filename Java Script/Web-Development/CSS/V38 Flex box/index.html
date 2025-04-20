@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 70vh;
+            
+            /* neeche waali 3 prop use hongi for flexing items */
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+            /* flex-direction: row     ; */
+            /* saare elements column wise allign ho jayenge */
+            
+
+            flex-wrap: wrap;
+            /* cheejo ko wrap kar deta hai  */
+           
+            
+            align-content:center;
+            /* ek he row hoti hai toh "align items" use karte hai and if we have more  than 1 rows then we will use "align content" */
+
+            /* gap: 7px; */
+            row-gap: 10px;
+            column-gap: 5px;
+
+            
+            
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            border: 2px solid purple;
+            background-color: pink    ;
+            /* margin: 4px; */
+           
+            
+            /* display: inline-block; */
+            /* iski jaga hum cotainer mei 
+            display :flex; use karenge */
+          
+        }
+       
+        /* ye order lagane se ,elements ekdum last mei chale jaayenge */
+        /* jitna zyada order utna zyada door */
+        .order1{
+            order: 1;
+        }
+            
+        .order2{
+            order: 2;
+        }
+        .order69{
+            order: 69;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order1">1</div>
+            <div class="item order2">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order69">69</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>

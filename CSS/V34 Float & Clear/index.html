@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            float: right;
+            /* image ab left side float hogi */
+
+            border: 2px solid black;
+        }
+
+        .cards {
+            border: 3px solid green;
+
+            display: flow-root;
+            /* image jo overflow karri the vo ab border ke andar he aayegi */
+
+        }
+
+        .card {
+            border: 1px solid red;
+            padding: 2px;
+            margin: 2px;
+        }
+       
+        .card:nth-child(3){
+            background-color: aqua;
+            
+            clear: right;
+            /* clear mei right side se floating vaali cheej clear kar dega, like in thiscase floathing cheej humari image thee toh image ko clear karke text le aayega  */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- (.cards>.card*3)    ye type karke hum directly ek div bana sakte hai jiske andar 3 aur div hongi with class card -->
+    
+    <div class="cards">
+        <img width="233px" src="img3.jpg" alt="sorry">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quod dolorum aliquam quas hic sint
+                perferendis molestiae assumenda beatae, consequatur porro ducimus at, est possimus quia ipsam
+                exercitationem alias molestias qui fugit nulla temporibus nam? Temporibus, culpa ut. Accusamus
+                blanditiis cum deleniti, aliquid laborum nisi ducimus laboriosam esse quisquam nesciunt.
+            </p>
+        </div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis est quisquam, soluta eos nam excepturi facilis adipisci perferendis accusantium amet id rerum culpa vero, corrupti animi? Perspiciatis debitis, expedita nostrum deserunt amet necessitatibus ea sit incidunt iure. Culpa voluptatum eius quas a nam, cumque neque tempore at alias nostrum dolores hic nemo aperiam modi illo? Repudiandae sequi dolorum iste eius libero, hic sint placeat maxime fuga labore, maiores necessitatibus cumque explicabo id delectus voluptate, architecto officiis quaerat aliquam dolores mollitia exercitationem odio nobis quae? Nisi nulla ducimus fugit ad eos totam quibusdam necessitatibus corporis molestias perspiciatis similique atque velit perferendis officia eius voluptate quae a nemo aliquid et harum, enim neque! Facere ullam nisi maxime ipsa! Voluptas iusto voluptatum vitae sunt eligendi quisquam impedit, libero, nesciunt consectetur culpa officia deserunt ut delectus reiciendis incidunt ex alias, pariatur tempore corporis vel. Animi accusamus libero porro rem in sunt quam dolor facilis ducimus, hic possimus obcaecati sit quae! Ipsa, consectetur aut saepe reprehenderit quibusdam nulla nam qui ducimus, sit fuga mollitia atque quo? Omnis harum provident rem impedit eius, ipsam magni incidunt dolorum dignissimos suscipit eos, laudantium excepturi quaerat perferendis sequi temporibus at iusto perspiciatis, nisi similique mollitia. Odit, sequi! Aut consequuntur voluptatem debitis est, suscipit omnis itaque earum! Ratione vero atque in vitae obcaecati beatae nostrum eum. Expedita, dolorem dicta! Accusamus voluptatem officiis nemo ipsam totam voluptate? Animi, amet veritatis sequi laborum enim iste a sed, eaque voluptate consequatur aliquam quia dolore illo in sit rerum ratione? Quasi, aspernatur recusandae soluta hic odit officia maxime suscipit voluptate id doloremque eligendi ex est consequatur autem nihil adipisci veniam, esse alias. Nisi, iure praesentium molestiae perferendis cupiditate sapiente temporibus iusto earum odit harum repellendus asperiores atque aperiam corporis perspiciatis tempora, nesciunt cum ut, sed vero itaque. Ut temporibus delectus veritatis sapiente nihil, aliquam quisquam omnis saepe esse incidunt aperiam? Error necessitatibus repellat molestiae vitae iure repudiandae fuga rem incidunt consectetur sapiente ex, animi molestias exercitationem officiis pariatur? Voluptate asperiores soluta suscipit. Quas doloribus consequuntur tempore nemo modi sunt repudiandae. Quas, amet natus ex incidunt ea assumenda libero iusto modi. Ut atque deserunt eos. Ad dolore aspernatur dolorum, suscipit nulla pariatur autem dolorem obcaecati recusandae rerum reprehenderit earum labore! Quasi labore qui, enim sunt laudantium dignissimos ducimus, tempore exercitationem voluptas fugiat quos quia repudiandae possimus aliquam perferendis, quibusdam at! Natus, earum molestias, ducimus maiores totam, saepe sapiente in sunt exercitationem quia harum ex sint temporibus architecto eaque quos iusto quaerat ab! Animi unde quibusdam itaque facere dignissimos perferendis velit, totam cupiditate fuga autem. Beatae eaque aliquid repellat sed eos. Tempora fuga magnam molestias possimus dolores autem esse soluta velit odio expedita sed modi assumenda optio distinctio ea placeat eum numquam repellendus, mollitia minima. Non nam in, nihil sint animi nemo fugit neque voluptates beatae magnam dolores. Perspiciatis, officia. A ratione dolor magnam quisquam eveniet, esse nam facilis consequatur, tempore soluta fuga commodi laboriosam qui vitae et. Quo tempore a labore ratione, quibusdam aspernatur officia rerum, sed deleniti neque ipsum fuga esse, corrupti eligendi numquam.</div>
+        
+        <div class="card">Card 3</div>
+
+    </div>
+
+</body>
+
+</html>

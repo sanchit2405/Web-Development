@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            width: 80vw;
+            height: 80vh;
+            grid-template-columns:  1fr 1fr 1fr;
+            /*  or repeat(3, 1fr); */
+            /* fr=fraction; jitni baar fr likha hai utne bhaag mei divide ho jaayegi 
+             jaise 3 baar likha hai toh 1/3 1/3 1/3 mei divide ho jaayegi  */
+
+            /* hum isko 1fr 2fr 1fr mei bhee kar kar sakte hai (karke dekho pata chal jaayega) */
+
+            gap: 10px 20px;
+            justify-items: center;
+            align-items: center;
+
+            /* place-content:center; */
+            /* saari cheeje centre mei aa jaayengi */
+        }
+
+        .items {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items item-2">2</div>
+        <div class="items item-3">3</div>
+        <div class="items item-4">4</div>
+        <div class="items item-5">5</div>
+
+    </div>
+</body>
+
+</html>

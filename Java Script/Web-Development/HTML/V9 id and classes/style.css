@@ -1,0 +1,13 @@
+/* dot(.) -> classes 
+(#) -> Id's */
+
+.red{
+    color : yellow ;
+    background-color: red;
+}
+
+
+#firstdiv{
+    background-color: pink;
+   color: blue;
+}

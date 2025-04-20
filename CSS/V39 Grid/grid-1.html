@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display:  grid;
+            
+            grid-template-columns:100px 120px;
+            /*  "100"-->the dist b/w 1st col & 2nd col is 100   ... "120"--> means the distance b/w 2nd and 3rd col will be 120 , but in this case there is no 3rd col  */
+
+         
+            grid-template-rows: 100px 120px ;
+            /* same for the rows  */
+        }
+        .items{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+           
+        }
+        .item-4{
+            grid-row: 1/2;
+            /* 1 se lekar 2 tak */
+            grid-column: 1/2;
+
+        }
+        .item-1{
+            
+            grid-row: 1/2;
+            grid-column: 1/2;
+            
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items item-2">2</div>
+        <div class="items item-3">3</div>
+        <div class="items item-4">4</div>
+        <div class="items item-5">5</div>
+        
+    </div>
+</body>
+</html>

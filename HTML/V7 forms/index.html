@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- In this, we made a form using "form"-> post and then we used "input" for taking inputs like username,gender and syntaxes were taken from codewith harry website. we used "label" for writing before the input like 'Enter Username' etc. div humne use kara hai for next line, we can also use br command. 
+         we also saw different types of inputs (select, checkbox,text area,etc..) -->
+
+
+    <!-- ### USERNAME -->
+
+    <h1>Form for recruitments</h1>
+    <form action="post">
+        <label for="username">Enter Your Username</label>
+        <div>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+
+
+        <!-- ### GENDER -->
+
+        <div>
+            <br>
+            <label for="">Select your Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <!-- we used "name=gender" in both male and female input it means that only one radio button we can select , if the names are different then more than one radio buttons can be selected  -->
+        </div>
+
+        <!-- ###CHECKBOX -->
+        <br>
+        <input type="checkbox" id="subscribe" name="subscribe" value="">
+
+        <label for="subscribe">Agree</label>
+
+
+        <!-- ### TEXT_AREA -->
+        <br><br>
+        <label for="comment">Enter your comment here</label>
+        <textarea name="comment" id="comment" rows="2" cols="50">
+
+</textarea>
+        <br>
+        <br>
+        <!-- ### SELECT ELEMENT -->
+
+        <select name="university">
+            <option value="srm">SRM</option>
+            <option value="vit">VIT</option>
+            <option value="jaypee">Jayee</option>
+        </select>
+    </form>
+
+
+</body>
+
+</html>

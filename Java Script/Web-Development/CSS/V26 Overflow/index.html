@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow property</title>
+    <style>
+        .box {
+            width: 45vw;
+            height: 21vh;
+
+            overflow: auto;
+            /* if we do auto then agar overflow hora hoga toh automatically scroll bar aa jaayega */
+
+
+            /* white-space: nowrap; */
+            /* white space se keval ek line mei aa jaayega , neeche nahi girega */
+
+            border: 2px solid blue;
+        }
+
+        .box1 {
+            width: 40vw;
+            height: 21vh;
+            overflow: scroll;
+            border: 3px solid purple;
+
+            white-space: nowrap;
+            /* white space se keval ek line mei aa jaayega , neeche nahi girega */
+        }
+        .box2{
+            width: 20vw;
+            height: 20vh;
+           
+            overflow: clip   ; 
+
+           /* overflow dikhega he nahi clip use karke,  na koi scrol bar na kuch  */
+           
+           border: 3px solid purple;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae ab aut molestiae dignissimos quaerat
+        reprehenderit repudiandae unde atque, perferendis esse nesciunt, porro sit, alias animi. Nemo, ipsam laudantium
+        veniam tempore quas saepe reiciendis laborum commodi, accusantium ullam, autem doloribus amet? Nihil
+        voluptatibus culpa ad cumque corporis architecto assumenda aliquam adipisci natus dicta! At saepe molestias,
+        provident neque labore velit sit excepturi adipisci nam, ipsam et illum similique totam enim sapiente sequi rem
+        asperiores quo aspernatur impedit harum, facilis quam maxime officia. Repellat, quas commodi! Repudiandae,
+        itaque aspernatur veritatis sit ducimus dolore dolores rerum. Aliquam eaque nemo sint eveniet accusamus?
+    </div> <br>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores pariatur at, itaque
+        reprehenderit eveniet iure distinctio modi non delectus, quidem nobis harum, neque dicta ratione aspernatur
+        ullam velit! Officia expedita maiores assumenda quidem placeat enim dolores, aliquid ut deserunt quis
+        consequatur perferendis autem repudiandae! Voluptas repellendus porro temporibus maxime in totam voluptatem
+        deleniti ipsum? Accusamus laborum quod voluptas sed omnis et reiciendis laudantium delectus, cupiditate
+        veritatis voluptates sint placeat aut labore illum aspernatur eos quam porro tenetur dignissimos maxime dolores
+        optio totam ipsam. Quae, ex. Ab quidem expedita corporis. Quos laudantium saepe veritatis, expedita eaque
+        officiis quis illo voluptates?</div>
+        <br>
+        <div class="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum veniam eius, similique quo ipsam cumque eos deleniti beatae. Hic vitae illo, temporibus laborum, culpa autem modi, nulla atque in iste ipsam reiciendis accusamus facere natus. Eos nulla quibusdam illum repudiandae sequi consequatur. Consequuntur voluptas magnam itaque est nulla totam porro error excepturi nobis repellat! Sequi.
+        </div>
+</body>
+
+</html>

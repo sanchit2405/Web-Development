@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS varibale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color: rgba(12, 228, 84, 0.806);
+            --seccolor: rgb(153, 153, 239);
+        }
+
+        .list {
+            background-color: rgb(35, 215, 47);
+            background-color: var(--color);
+            padding: 20px;
+       
+        }
+
+        ul{
+            margin: 5px;
+           padding: 10px;
+        
+         
+           
+        }
+        ul li{
+            border: 2px solid black;
+        }
+       ul li:first-child{
+        --boxcolor: pink;
+        background-color: var(--boxcolor);
+       }
+      
+
+        .container {
+            background-color: rgb(124, 212, 130);
+            background-color: var(--seccolor);
+            padding: 10px;
+        }
+        .con2{
+            --color:rgb(198, 83, 198);
+            --seccolor: yellow;
+
+            color: var(--color);
+            background-color: var(--seccolor);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="list">
+       
+        <ul>
+              <li>Sanchit</li>
+            <li>Yashika</li>
+            <li>Yashasvi</li>
+        </ul>
+           
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam non ducimus nostrum doloribus illum quia
+        repellendus corrupti, ex temporibus perferendis. Facere repudiandae voluptatibus atque, laudantium natus
+        explicabo pariatur obcaecati repellat? Provident dolore sapiente doloremque quae nobis. Ducimus quos maiores sed
+        consequuntur eum error distinctio quidem.
+    </div>
+<br>
+    <div class="con2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa numquam quidem nostrum ullam nobis perspiciatis quisquam enim doloribus sint!
+    </div>
+</body>
+
+</html>

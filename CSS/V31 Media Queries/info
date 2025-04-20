@@ -1,0 +1,50 @@
+ @media ONLY screen and (orientation : landscape)  {
+        body{           
+            background-color: pink;
+            color:purple
+        }
+        .box{
+           background-color: chartreuse;
+           border: 2px solid black ;
+        }
+       }
+       @media ONLY screen and (orientation : portrait) {
+        body{
+            background-color: yellow;
+            color:black;
+        }
+        .box{
+           background-color: red;
+           border: 2px solid black ;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+       }
+
+
+       OR OR OR OR 
+
+       @media ONLY screen and (min-width:599px) and (max-width: 1024px) {
+        body{
+            background-color: pink;
+            color:purple
+        }
+        .box{
+           background-color: chartreuse;
+           border: 2px solid black ;
+        }
+       }
+       @media ONLY screen and (min-width:0px) and (max-width: 599px) {
+        body{
+            background-color: yellow;
+            color:black;
+        }
+        .box{
+           background-color: red;
+           border: 2px solid black ;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+       }
